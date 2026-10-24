@@ -8,7 +8,8 @@ public class Main {
     public static void main(String[] args) {
         final Services services = new ServicesImpl();
 //        services.runStringPractiseQuestion();
-        services.runConditionalPractiseQuestion();
+//        services.runConditionalPractiseQuestion();
+        services.runLoopConditionPractise();
     }
 
 
