@@ -1,8 +1,10 @@
 package Services;
 
 import DAL.ConditionalPractise;
+import DAL.LoopPractise;
 import DAL.StringPractise;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -67,5 +69,47 @@ public class ServicesImpl implements Services{
         System.out.println("Give the website link to check the domain");
         String website = sc.nextLine();
         System.out.println(conditionalPractise.typeOfWebsite(website));
+    }
+
+    @Override
+    public void runLoopConditionPractise() {
+        LoopPractise loopPractise = new LoopPractise();
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("write the number of lines you want to print pattern");
+        int n = sc.nextInt();
+        loopPractise.printPattern(n);
+
+        System.out.println("Give n to find sum of first n even number");
+        n = sc.nextInt();
+        System.out.println(loopPractise.sumFirstNEvenNumberUsingWhileLoop(n));
+
+        System.out.println("Give number to print his table");
+        n = sc.nextInt();
+        loopPractise.tableOfN(n);
+
+        System.out.println("Give number to print his table in reverse order");
+        n = sc.nextInt();
+        loopPractise.reverseTableOfN(n);
+
+        System.out.println("Give number to find his factorial");
+        n = sc.nextInt();
+        System.out.println(loopPractise.factorial(n));
+
+        System.out.println("Give number to find his factorial using while loop");
+        n = sc.nextInt();
+        System.out.println(loopPractise.factorialUsingWhileLoop(n));
+
+        System.out.println("write the number of lines you want to print pattern using while loop");
+        n = sc.nextInt();
+        loopPractise.printPatternUsingWhileLoop(n);
+
+        System.out.println("write number to find the sum of his table");
+        n = sc.nextInt();
+        System.out.println(loopPractise.sumOfTableOfNumber(n));
+
+        System.out.println("Give n to find sum of first n even number using while loop");
+        n = sc.nextInt();
+        System.out.println(loopPractise.sumFirstNEvenNumberUsingWhileLoop(n));
     }
 }
