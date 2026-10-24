@@ -7,7 +7,8 @@ import Services.ServicesImpl;
 public class Main {
     public static void main(String[] args) {
         final Services services = new ServicesImpl();
-        services.runStringPractiseQuestion();
+//        services.runStringPractiseQuestion();
+        services.runConditionalPractiseQuestion();
     }
 
 
