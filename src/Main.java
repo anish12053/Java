@@ -9,7 +9,8 @@ public class Main {
         final Services services = new ServicesImpl();
 //        services.runStringPractiseQuestion();
 //        services.runConditionalPractiseQuestion();
-        services.runLoopConditionPractise();
+//        services.runLoopConditionPractise();
+        services.runArrayPractiseQuestion();
     }
 
 
