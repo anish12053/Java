@@ -30,17 +30,25 @@ import java.util.Scanner;
 //          System.out.println(d.replacement(letter , name));
 
 
-          Conditions c= new Conditions();
-          c.Age();
+//          Conditions c= new Conditions();
+//          c.Age();
+//
+//          Conditions con= new Conditions();
+//
+//          int sub1= sc.nextInt();
+//          int sub2= sc.nextInt();
+//          int sub3= sc.nextInt();
+//
+//          con.number(sub1,sub2 ,sub3);
+//
+//          Conditions t= new Conditions();
+//          int day =sc.nextInt();
+//
+//          t.week(day);
 
-          Conditions con= new Conditions();
-
-          int sub1= sc.nextInt();
-          int sub2= sc.nextInt();
-          int sub3= sc.nextInt();
-
-          con.number(sub1,sub2 ,sub3);
-
+        Conditions o = new Conditions();
+        String web= sc.nextLine();
+       o.website(web);
         }
     }
 
