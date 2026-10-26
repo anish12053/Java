@@ -1,9 +1,6 @@
 package Services;
 
-import DAL.ArrayPractise;
-import DAL.ConditionalPractise;
-import DAL.LoopPractise;
-import DAL.StringPractise;
+import DAL.*;
 
 import java.sql.SQLOutput;
 import java.util.ArrayList;
@@ -161,5 +158,40 @@ public class ServicesImpl implements Services{
 
         System.out.println("Arrays is sorted or not: " + (arrayPractise.checkSorted(arr) ? "Yes" : "No"));
 
+    }
+
+    @Override
+    public void runMethodPractiseQuestion() {
+
+        MethodPractise methodPractise = new MethodPractise();
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Write number to print table");
+        int num = sc.nextInt();
+        methodPractise.tableOfN(num);
+
+        System.out.println("Write number to find sum of first n natural number");
+        num = sc.nextInt();
+        System.out.println(methodPractise.sumOfNNaturalNumber(num));
+
+        System.out.println("Write number to find fibonacci of it");
+        num = sc.nextInt();
+        System.out.println(methodPractise.fibonacci(num));
+
+        System.out.println("give n number to find average , first give n the size and then n numbers");
+        num = sc.nextInt();
+        int[] arr = new int[num];
+        for(int i=0;i<num;i++){
+            arr[i] = sc.nextInt();
+        }
+        System.out.println(methodPractise.average(arr));
+
+        System.out.println("Give celsius temperature to convert into fahrenheit");
+        num = sc.nextInt();
+        System.out.println(methodPractise.celsiusToFahrenheit(num));
+
+        System.out.println("Write number to find sum of first n natural number Using Iteation");
+        num = sc.nextInt();
+        System.out.println(methodPractise.sumOfNNaturalNumberUsingIteration(num));
     }
 }

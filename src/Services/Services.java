@@ -5,4 +5,5 @@ public interface Services {
      void runConditionalPractiseQuestion();
      void runLoopConditionPractise();
      void runArrayPractiseQuestion();
+     void runMethodPractiseQuestion();
 }
