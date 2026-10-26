@@ -3,7 +3,7 @@ package SANJU;
 
 public class Q1LowerCase {
 
-    public String ToLowerCase(String str) {
+    public String toLowerCase(String str) {
         return str.toLowerCase();
     }
 }
