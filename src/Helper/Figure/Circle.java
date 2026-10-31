@@ -2,7 +2,7 @@ package Helper.Figure;
 
 public class Circle implements Shape{
 
-    int r;
+    protected int r;
 
     public Circle(int r){
         this.r = r;
