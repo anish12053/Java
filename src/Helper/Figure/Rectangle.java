@@ -1,7 +1,7 @@
 package Helper.Figure;
 
 public class Rectangle implements Shape{
-    int a,b;
+    protected int a,b;
 
     public Rectangle(int a, int b){
         this.a =  a;
