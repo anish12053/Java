@@ -1,8 +1,5 @@
 
-import SANJU.Q1LowerCase;
-import SANJU.Q2Space;
-import SANJU.Q3dear;
-import SANJU.Conditions;
+import SANJU.*;
 
 import java.util.Scanner;
 
@@ -46,9 +43,24 @@ import java.util.Scanner;
 //
 //          t.week(day);
 
-        Conditions o = new Conditions();
-        String web= sc.nextLine();
-       o.website(web);
+//        Conditions o = new Conditions();
+//        String web= sc.nextLine();
+//       o.website(web);
+//
+
+       FountainPen p= new FountainPen();
+       p.refill();
+       p.changeNib();
+
+       Human h= new Human();
+       h.eat();
+       h.sleep();
+
+       Telephone t= new SmartPhone();
+       t.ring();
+       t.lift();
+       t.disconnect();
+
         }
     }
 
